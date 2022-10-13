@@ -12,8 +12,8 @@
 <script>
     function addData() {
         var table = document.getElementById("data_tb");
-        var srcs = ["original", "mel-gan","wavernn1.0","wavernn1.1"]
-        var files = ['给我一个理由忘记_1','隐形的翅膀_5','致青春_9','夜夜夜夜_5','如果没有你_6','日不落_2','默_9','红色高跟鞋_10','奇妙能力歌_6','欢颜_5','月牙湾_16','小幸运_20','日不落_5','亲爱的那不是爱情_7','故宫_2']
+        var srcs = ["Record", "VITS","VISinger","DIFFSinger"]
+        var files = ['audio_0']
         var i = 1;
         for (const file of files) {
             var row = table.insertRow(i);
@@ -32,23 +32,26 @@
         <div class="row">
             <main>
                 <h1>
-                    自研歌声合成 声码器效果对比
+                    Demos noticed in the "{paper title}"
                 </h1>
                 <table id="data_tb" class="table table-bordered table-hover">
                     <thead>
                         <tr>
                             <th></th>
                             <th>
-                                <span class="font-weight-normal">原始音频</span>
+                                <span class="font-weight-normal">Record</span>
                             </th>
                             <th>
-                                <span class="font-weight-normal">Mel-GAN</span>
+                                <span class="font-weight-normal">VITS</span>
                             </th>
                             <th>
-                                <span class="font-weight-normal">WaveRNN1.0</span>
+                                <span class="font-weight-normal">VISinger</span>
                             </th>
                             <th>
-                                <span class="font-weight-normal">WaveRNN1.1</span>
+                                <span class="font-weight-normal">DIFFSinger</span>
+                            </th>
+                            <th>
+                                <span class="font-weight-normal">NCMSinger</span>
                             </th>
                         </tr>
                     </thead>
