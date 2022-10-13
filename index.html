@@ -21,7 +21,7 @@
             cell1.innerHTML = file;
             for (var j = 0 ; j < srcs.length; ++j) {
                 var cell2 = row.insertCell(j+1);
-                cell2.innerHTML = "<audio controls><source src=\"" + srcs[j] + "/" + file + ".wav\" type=\"audio/wav\"></audio>";
+                cell2.innerHTML = "<audio controls><source src=\"" + "demos" + "/" + srcs[j] +"_"+ file + ".wav\" type=\"audio/wav\"></audio>";
             }
         }       
     }
