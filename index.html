@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="./css/custom.css">
 <link rel="alternate" href="index.xml" type="application/rss+xml" title="Speech Research">
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-<title>NCMSinger: MEL-CONSTRAINED VITS WITH PROSODY MODELING FOR SINGING VOICE SYNTHESIS</title>
+<title>NCMSinger:  Mel-guided VITS with Prosody Modeling for Singing Voice Synthesis</title>
 </head>
 <body>
 
@@ -41,9 +41,8 @@
 <li>Yang Bai (NetEase Cloud Music) <a href="mailto:baiyang03@corp.netease.com">baiyang03@corp.netease.com</a></li>
 <li>Xiangyu Zhao (NetEase Cloud Music) <a href="mailto:zhaoxiangyu01@corp.netease.com">zhaoxiangyu01@corp.netease.com</a></li>
 </ul>
-<small>*Corresponding author</small>
 <h2 id="abstract">Abstract</h2>
-<p>Variational inference with adversarial training has been recently applied on speech and singing voice synthesis. Previous research including VITS and VISinger has shown promising results. In this paper, we propose NCMSinger, an end-to-end system with VITS-like architecture for singing voice synthesis. First, we introduce utterance/frame-level prosody to model the acoustic variance in singing voice. Second, we develop a mel decoder to predict mel-spectrogram and frame-level mean/variance simultaneously. L1 loss on predicted mel-spectrogram is added to final loss to guide the training. Finally, we design an F0 predictor and employ F0-driven SingGAN for singing voice reconstruction. Experiments on a female Mandarin singing dataset show that the proposed system produces natural singing voice and outperforms existing SVS systems such as VISinger and DiffSinger. Moreover, NCMSinger converges fast, as shown in ablation studies. </p>
+<p>Variational inference with adversarial training has been recently applied on speech and singing voice synthesis. Previous research including VITS and VISinger has shown promising results. In this paper, we propose NCMSinger, an end-to-end system with VITS-like architecture for singing voice synthesis. First, we introduce utterance/frame-level prosody to model the acoustic variance in singing voice. Second, we develop a mel decoder to predict mel-spectrogram and the frame-level mean/variance used for constructing prior distribution. L1 loss on predicted mel-spectrogram is added to final loss to guide the training. Finally, we design an F0 predictor and employ F0-driven SingGAN for singing voice reconstruction. Experiments on a female Mandarin singing dataset show that the proposed system produces natural singing voice and outperforms existing SVS systems such as VISinger and DiffSinger. Moreover, NCMSinger converges fast, as shown in ablation studies. </p>
 <h2 id="abstract">Contents</h2>
 <b><a href="#audio-samples">Audio Samples</a></b><br>
 <a href="#audio-quality">1.1 Audio Quality</a><br>
@@ -53,7 +52,7 @@
 <a href="#Convergency ">2.2 Convergency</a><br>
 <p><span id="audio-samples" name="audio-samples"></span></p>
 <h2 id="audio-samples">Audio Samples</h2>
-音频样例说明.
+There are audio samples be compared. To follow our paper. As our paper, the 1st part named audio-quality shows the audio from different SVS system. The 2nd part named ablation shows the effects of sub-modules of NCMSinger and the speed of convergency of the NCMSinger.   
 <p><span id="audio-quality" name="audio-quality"></span></p>
 <h3 id="audio-quality">Audio Quality</h3>
 <img src="./MOS.png" width="40%" height="20px" alt="NCMSinger_pipline">
